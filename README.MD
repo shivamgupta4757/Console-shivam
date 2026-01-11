@@ -1,73 +1,83 @@
 🚀 Console Shivam — Developer Portfolio
 
-Console Shivam is a modern, animated, and fully responsive developer portfolio website built with pure HTML, CSS, and JavaScript.
-It’s designed to reflect creativity, code, and personal storytelling — blending interactive visuals with a clean, futuristic UI.
+Console Shivam is a sleek, animated, and fully responsive developer portfolio crafted using pure HTML, CSS, and JavaScript.
+The project is built to showcase creativity, clean code, and personal storytelling through interactive visuals and a modern, futuristic user interface.
 
 ✨ Features
 🧠 Hero Section
 
-Dynamic neon bubbles that gently react to mouse movement.
+Dynamic neon bubbles that subtly respond to mouse movement.
 
-Eye-catching gradient call-to-action buttons.
+Gradient-based call-to-action buttons with a strong visual presence.
 
-Smooth text hierarchy and clear personal introduction.
+Clear text hierarchy paired with a smooth personal introduction.
 
 👤 About Me
 
-Compact bio section with professional background.
+Concise professional bio highlighting background and focus areas.
 
-Soft glowing effects and animated gradient highlights.
+Soft glow effects combined with animated gradient accents.
 
-Dotted grid pattern background for a subtle design texture.
+Dotted grid background adding a minimal yet refined texture.
 
 🧭 Journey (Timeline)
 
-Vertical milestone cards displaying year-by-year progress.
+Vertical timeline cards representing year-by-year growth.
 
-Hover animations with glowing connection nodes.
+Hover-based animations with glowing connection points.
 
-Smooth motion and light reflections using pure CSS.
+Smooth transitions and light reflections implemented using pure CSS.
 
 💪 Skills Showcase
 
-Animated skill cards sliding in alternating directions.
+Animated skill cards moving in alternating directions for visual rhythm.
 
-Each card includes an official Devicon logo (React, Next.js, Figma, etc.).
+Each card features an official Devicon logo (React, Next.js, Figma, etc.).
 
-Responsive grid and hover glow transitions.
+Fully responsive layout with subtle glow effects on hover.
 
 🧩 Projects
 
-Clean project cards showcasing individual works.
+Minimal and clean project cards highlighting individual works.
 
-Easily extendable for future additions or case studies.
+Structured for easy scalability and future project additions.
+
+🏆 Achievements & Open-Source Journey
+
+Active participation in open-source projects during Hacktoberfest, showcasing collaboration, consistency, and real-world problem solving.
+
+Progressed through Contributor Levels 0–4, reflecting steady and impactful contributions.
+
+Earned recognition through the Hacktoberfest 5-Badge Club and 1-Badge Club, and contributed to the Tree-Nation campaign supporting sustainability.
+
+Awarded Hacktoberfest Supercontributor status for exceptional contributions and community engagement.
 
 💬 Footer
 
-Modern footer with glowing social icons and gradient text animation.
+Modern footer design with glowing social icons and animated gradient text.
 
-Follows cursor with a soft purple glow orb effect.
+Interactive purple glow orb that follows cursor movement.
 
-Includes contact links (LinkedIn, GitHub, Twitter/X, Behance, Instagram, Email).
+Includes contact links for LinkedIn, GitHub, Twitter/X, Behance, Instagram, and Email.
 
 🛠️ Built With
 
-HTML5 — semantic structure
+HTML5 — semantic and accessible structure
 
-CSS3 — modern gradients, animations, and responsive design
+CSS3 — advanced gradients, animations, and responsive layouts
 
-JavaScript (Vanilla) — interactive effects and DOM manipulation
+JavaScript (Vanilla) — interactivity and DOM manipulation
 
-Devicon & Font Awesome — tool icons and vector social icons
+Devicon & Font Awesome — technology and social media icons
 
-Google Fonts (Poppins) — clean, readable typography
+Google Fonts (Poppins) — clean and readable typography
 
 🎨 Visual Effects & Motion
 
-Neon Bubbles: Randomly placed radial gradient bubbles that move away from cursor proximity.
+Neon Bubbles: Radial gradient bubbles that dynamically move away from cursor proximity.
 
-Sliding Navbar Capsule: A smooth, glowing capsule underlines menu items on hover.
+Sliding Navbar Capsule: A glowing capsule smoothly animates beneath navigation items on hover.
 
-Floating Glow Orb: Animated light trail that follows the mouse in the footer.
+Floating Glow Orb: A soft animated light trail that follows the cursor within the footer.
 
-Alternating Skill Rows: Skill cards gently move left and right in a rhythmic loop.
+Alternating Skill Rows: Skill cards gently shift left and right in a continuous rhythmic loop.
