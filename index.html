@@ -1,24 +1,25 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title >Console Shivam</title>
-  <link rel="icon" href="Shivam.jpg" type="image/png">
+  <link rel="icon" href="/shivam-profile2 (2).png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#000;
       --panel:#1a002f;
       --accent:#64048a;
-      --hover:#e8d6f0;
+      --hover:#9a33c7;
       --mono:'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto;
     }
     *{box-sizing:border-box; margin:0; padding:0; scroll-behavior:smooth;}
     body{font-family:var(--mono); background:var(--bg); color:#e6e6e6; overflow-x:hidden;}
 
     /* Header */
-    header{position:fixed; width:100%; display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:rgba(0,0,0,0.4); backdrop-filter:blur(10px); z-index:1000;}
+    header{position:fixed; width:100%; display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:rgba(244, 244, 244, 0); backdrop-filter:blur(0px); z-index:1000;}
     .logo{font-weight:150; font-size:13px; color:#fff;}
     
     nav{position:relative;}
@@ -35,6 +36,7 @@
       transform:translateY(-50%);
       transition:0.7s ease;
       z-index:1;
+
     }
 
     /* Hero Section */
@@ -72,7 +74,7 @@ font-size: 10px;
       opacity:0.3;
       pointer-events:none;
       mix-blend-mode:screen;
-      transition:transform 0.2s ease-in;
+      transition:transform 0.10s ease-out;
     }
 
     .section{padding:100px 10%;}
@@ -124,6 +126,57 @@ font-size: 10px;
     .project-card{background:rgba(255,255,255,0.05); padding:20px; border-radius:15px; transition:0.3s;}
     .project-card:hover{transform:scale(1.05); box-shadow:0 0 25px var(--accent);}
 
+   .achievements {
+  background: #000;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.achievements h2 {
+  color: #61068a;
+  font-size: 2.4rem;
+  margin-bottom: 50px;
+}
+
+/* CAMERA */
+.arc-scene {
+  perspective: 1200px;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ARC HOLDER */
+.arc-track {
+  position: relative;
+  width: 720px;
+  height: 260px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+/* CARD */
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+}
+
+/* IMAGE */
+.card img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+
+
     /* Footer */
     footer{padding:40px 10%; text-align:center; background:var(--panel); margin-top:50px;}
     .social-icons{margin-bottom:15px;}
@@ -141,6 +194,7 @@ font-size: 10px;
       <li><a href="#journey">Journey</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-slider"></div>
@@ -172,13 +226,13 @@ font-size: 10px;
 
   <div class="about-container">
     <div class="about-image">
-      <img src="Shivam.jpg" alt="Shivam Kumar Gupta">
+      <img src="/shivam-profile2 (2).png" alt="Shivam Gupta">
     </div>
 
     <div class="about-content">
       <h3>SHIVAM KUMAR GUPTA</h3>
       <p class="about-status">
-        <span>Currently in dev mode: </span> College ✕ Hackathons ✕ Learning
+        <span>Currently in dev mode: </span> College ✕ Hackathons ✕ Learning ✕ Open Source Contribution
       </p>
       <p class="about-tagline">
        When I’m not coding, I’m probably designing UI/UX interfaces, creating social media content, or exploring new tools and technologies to level up my skills.
@@ -240,7 +294,7 @@ My design and development philosophy focuses on clean, aesthetic interfaces, use
 
 .about-image img {
   width: 150px;
-  height: 190px;
+  height: 172px;
   object-fit: cover;
   border-radius: 12px;
   border: 2px solid rgba(170, 98, 199, 0.5);
@@ -302,6 +356,11 @@ My design and development philosophy focuses on clean, aesthetic interfaces, use
   filter: blur(90px);
   z-index: 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* ======================= RESPONSIVE ======================= */
 @media (max-width: 900px) {
@@ -481,6 +540,19 @@ to keep building, keep designing, and keep growing into a developer who blends l
   0% { transform: translateX(40px); }
   100% { transform: translateX(-40px); }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap');
+
+.achievement-journey {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 900;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  color: #cfd8ff; /* soft futuristic tone */
+  opacity: 0.95;
+}
+
 </style>
 
 
@@ -493,6 +565,34 @@ to keep building, keep designing, and keep growing into a developer who blends l
     <div class="project-card"><h3>Portfolio Website</h3><p>Personal website showcasing skills and design aesthetics.</p></div><br>
     
 </section>
+
+<section id="achievements" class="achievements">
+  <h2>Achievements</h2>
+<h4 class="achievement-journey" >
+  (Hacktoberfest Contributions & Achievements) <br>
+</h4>
+
+  <div class="arc-scene" id="scene">
+    <div class="arc-track" id="track">
+      <div class="card"><img src="/lvl5-astronaut.webp"></div>
+      <div class="card"><img src="/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbWcyejhoMW4wMDAwanUwNGJxOHUzdWw2IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=.webp"></div>
+      <div class="card"><img src="/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbWczMXR3bnAwMDAwbGEwNGQxejRuN3B3IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=.webp"></div>
+      <div class="card"><img src="/eyJidWNrZXQiOiJob2xvcGluLWFzc2V0cyIsImtleSI6ImFzc2V0cy9jbWY2NmlrajQwMDAwaWUwNG8xaGRsZGF1IiwiZWRpdHMiOnsicm90YXRlIjpudWxsfX0=.webp"></div>
+      <div class="card"><img src="/lvl4-astronaut.webp"></div>
+<div class="card"><img src="/lvl3-astronaut.webp"></div>
+<div class="card"><img src="/lvl2-astronaut.webp"></div>
+<div class="card"><img src="/lvl1-astronaut.webp"></div>
+<div class="card"><img src="/lvl0-astronaut.webp"></div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
 
 <!-- ======================= FOOTER SECTION ======================= -->
 <footer id="contact" class="footer-section">
@@ -758,6 +858,43 @@ window.addEventListener('load', ()=>{
   const active = links[links.length-1]; // default on last link (contact)
   updateSlider(active);
 });
+
+
+ 
+  const cards = document.querySelectorAll(".card");
+  const track = document.getElementById("track");
+
+  const radius = 800;     // distance FROM camera
+  const arc = 140;        // C-shape
+  const start = -arc / 2;
+
+  cards.forEach((card, i) => {
+    const angle = start + (arc / (cards.length - 1)) * i;
+
+    card.style.transform = `
+      translate(-50%, -50%)
+      rotateY(${angle}deg)
+      translateZ(-${radius}px)
+    `;
+  });
+
+  const scene = document.getElementById("scene");
+
+  scene.addEventListener("mousemove", (e) => {
+    const percent = (e.clientX / window.innerWidth - 0.5) * 30;
+    track.style.transform = `rotateY(${percent}deg)`;
+  });
+
+  scene.addEventListener("mouseleave", () => {
+    track.style.transform = "rotateY(0deg)";
+  });
+
+
+
+
+
+  
+
 </script>
 
 </body>
