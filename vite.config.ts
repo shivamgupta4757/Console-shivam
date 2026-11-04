@@ -10,6 +10,8 @@ function copyRootRepoAssetsPlugin() {
     closeBundle() {
       const outDir = path.resolve(__dirname, 'dist');
       if (!fs.existsSync(outDir)) return;
+      // Ensure .nojekyll exists in dist/ so GitHub Pages serves static assets directly
+      fs.writeFileSync(path.join(outDir, '.nojekyll'), '');
       const entries = fs.readdirSync(__dirname);
       for (const file of entries) {
         if (
@@ -33,6 +35,14 @@ export default defineConfig(() => {
     base: '/',
     build: {
       outDir: 'dist',
+      assetsDir: 'assets',
+      rollupOptions: {
+        output: {
+          entryFileNames: 'assets/[name]-[hash].js',
+          chunkFileNames: 'assets/[name]-[hash].js',
+          assetFileNames: 'assets/[name]-[hash].[ext]',
+        },
+      },
     },
     plugins: [react(), tailwindcss(), copyRootRepoAssetsPlugin()],
     resolve: {
